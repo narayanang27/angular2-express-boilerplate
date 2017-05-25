@@ -1,0 +1,41 @@
+{
+  "name": "express-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"node ./bin/www\"",
+    "lint": "tslint ./public/javascripts/**/*.ts -t verbose",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.10",
+    "@angular/compiler": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "@angular/forms": "^2.4.10",
+    "@angular/http": "^2.4.10",
+    "@angular/platform-browser": "^2.4.10",
+    "@angular/platform-browser-dynamic": "^2.4.10",
+    "@angular/router": "^3.4.10",
+    "angular-in-memory-web-api": "^0.3.1",
+    "body-parser": "~1.16.0",
+    "cookie-parser": "~1.4.3",
+    "core-js": "^2.4.1",
+    "debug": "~2.6.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "less-middleware": "~2.2.0",
+    "morgan": "~1.7.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.2.0",
+    "serve-favicon": "~2.3.2",
+    "systemjs": "^0.19.47",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "canonical-path": "0.0.2",
+    "concurrently": "^3.4.0",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  }
+}

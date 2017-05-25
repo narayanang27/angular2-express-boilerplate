@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Angular QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="/scripts/core-js/client/shim.min.js"></script>
+
+    <script src="/scripts/zone.js/dist/zone.js"></script>
+    <script src="/scripts/reflect-metadata/Reflect.js"></script>
+    <script src="/scripts/systemjs/dist/system.src.js"></script>
+
+    <script src="/scripts/jquery/dist/jquery.min.js"></script>
+    <script src="/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+
+    <script src="/app/systemjs.config.js"></script>
+
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <todo-app>Loading AppComponent content here ...</todo-app>
+  </body>
+</html>
